@@ -28,7 +28,7 @@
                             <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Enter confirm Password">
                             <p></p>
                         </div> 
-                        <button class="btn btn-primary mt-2">Register</button>
+                        <button class="btn btn-custom mt-2">Register</button>
                     </form>                    
                 </div>
                 <div class="mt-4 text-center">

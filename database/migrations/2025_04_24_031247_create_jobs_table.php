@@ -22,11 +22,11 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('benefits')->nullable();
             $table->text('responsibility')->nullable();
-            $table->text('qualification')->nullable();
+            $table->text('qualifications')->nullable();
             $table->text('keywords')->nullable();
             $table->string('experience');
             $table->string('company_name');
-            $table->string('comapny_location')->nullable();
+            $table->string('company_location')->nullable();
             $table->string('company_website')->nullable();
             $table->timestamps();
         });

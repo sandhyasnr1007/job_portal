@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('jobs', function (Blueprint $table) {
-            $table->integer('status')->default(1)->after('company_website');
-            $table->integer('isfeatured')->after('status')->default(0);
+            $table->foreignId('user_id')->after('job_type_id')->constrained()->ondelete('cascade');
 
         });
     }
@@ -24,10 +23,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('jobs', function (Blueprint $table) {
-            $table->dropColumn('status')->default(1);
-            $table->dropColumn('isfeatured')->default(0);
-
-
-    });
-}
+            $table->dropForeign('user_id');
+            $table->dropColumn('user_id');
+        });
+    }
 };

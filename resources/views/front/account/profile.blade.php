@@ -22,7 +22,7 @@
 
                 <div class="card border-0 shadow mb-4">
                     
-                    <form action="" method="post" id="userForm" name="userForm">
+                    <form action="" method="get" id="userForm" name="userForm">
                         <div class="card-body  p-4">
                             <h3 class="fs-4 mb-1">My Profile</h3>
                             <div class="mb-4">
@@ -37,7 +37,7 @@
 
                             </div>
                             <div class="mb-4">
-                                <label for="" class="mb-2">Designation</label>
+                                <label for="" class="mb-2">Position</label>
                                 <input type="text" name="designation" id="designation" placeholder="Designation" class="form-control" value="{{ $user->designation}}">
                             </div>
                             <div class="mb-4">
@@ -46,7 +46,7 @@
                             </div>                        
                         </div>
                         <div class="card-footer  p-4">
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-custom">Update</button>
                         </div>
     
                     </form>
@@ -69,7 +69,7 @@
                         </div>                        
                     </div>
                     <div class="card-footer  p-4">
-                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-custom">Update</button>
                     </div>
                 </div>                
             </div>
@@ -106,7 +106,7 @@ $("#userForm").submit(function(e){
                     .removeClass('invalid-feedback')
                     .html('')
 
-                    window.location,href="{{ route('account.profile') }}";
+                    window.location.href="{{ route('account.profile') }}";
 
             }else{
                 var errors = response.errors;
