@@ -13,6 +13,8 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
 	<!-- Fav Icon -->
@@ -38,7 +40,7 @@
 						<a class="nav-link" aria-current="page" href="jobs.html">Blog </a>
 					</li>
                     <li class="nav-item">
-						<a class="nav-link" aria-current="page" href="jobs.html">Contact Us </a>
+						<a class="nav-link" aria-current="page" href="{{ route('contact.submit') }}">Contact Us </a>
 					</li>							
 				</ul>	
 
